@@ -360,6 +360,7 @@ body{
     justify-content: unset;
     flex-wrap: wrap;
     width: 100%;
+    overflow: hidden;
 
     padding-bottom: 70px;
 
@@ -581,8 +582,10 @@ textarea.company__newsletter{
 
 
 @media screen and (max-width: 990px) {
-    .example__info{
 
+    /*EXAMPLES*/
+    .example__image{
+        width: 24.6666%;
     }
 }
 
@@ -612,6 +615,12 @@ textarea.company__newsletter{
     .team__item{
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    /*EXAMPLES*/
+
+    .example__image{
+        width: 32.6666%;
     }
 
     /*REVIEWS*/
@@ -684,10 +693,19 @@ textarea.company__newsletter{
         width: 40%;
     }
 
+    /*EXAMPLES*/
+    .example__image{
+        width: 45.6666%;
+    }
+
     /*FOOTER*/
 
+    .footer{
+        padding: 30px 0;
+    }
     .company__description{
-        width: 70%;
+        align-items: center;
+        width: 100%;
         margin:  30px 0 ;
     }
     .company__title{
@@ -700,4 +718,98 @@ textarea.company__newsletter{
 
 @media screen and (max-width: 350px) {
 
+    /*INTRO*/
+
+    .intro__title{
+        font-size: 16px;
+    }
+    .intro__text{
+        font-size: 12px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .intro__inner:after{
+        display: none;
+    }
+
+    /*BUTTON*/
+    .button{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    /*ABOUT*/
+    .about__image{
+        display: none;
+    }
+    .section__content{
+        padding-left: 0;
+        text-align: center;
+    }
+    .section__title{
+        text-align: center;
+    }
+
+    /*SERVICE*/
+    .service__inner{
+        margin-bottom: 0;
+    }
+    .service__description:after{
+        top: 120px;
+    }
+    .service__text{
+        padding-top: 10px;
+    }
+    .service__item{
+        width: 100%;
+        border: none;
+    }
+    .service__item.modified.ipad3{
+        border: none;
+    }
+    .service__item.low.ipad4{
+        border: none;
+    }
+
+    /*TEAM*/
+    .team{
+        padding-bottom: 30px;
+     }
+    .team__info{
+        width: 70%;
+        padding-bottom: 30px;
+    }
+
+    /*EXAMPLE*/
+
+    .example__info{
+        flex-direction: column;
+    }
+    /*REVIEWS*/
+
+    .reviews__image{
+        display: none;
+    }
+
+    /*CLIENTS*/
+
+    .newsletter__content{
+        width: 100%;
+    }
+    .clients__content{
+        display: none;
+    }
+
+    /*FOOTER*/
+
+    .footer{
+        padding:30px 0;
+    }
+    .company__description{
+        width: 100%;
+        padding-right: 0;
+    }
+    .company__details{
+        margin-bottom: 30px;
+    }
 }
